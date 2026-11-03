@@ -1,0 +1,75 @@
+# Dependencies & Python venv
+node_modules/
+.venv/
+venv/
+
+# Env (keep .env.example)
+.env
+.env.*
+!.env.example
+.envrc
+.env.local
+.env.development
+.env.production
+
+# Runtime databases & SQLite junk
+apps/api/data/*.db
+apps/api/data/*.db-shm
+apps/api/data/*.db-wal
+apps/data/
+*.db
+*.db-journal
+*.sqlite
+*.sqlite3
+
+# Expo / build caches
+.expo/
+dist/
+web-build/
+expo-env.d.ts
+*.tsbuildinfo
+
+# Python caches
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+*.egg-info/
+
+# External / local-only data
+database/EComAgentBench_/
+data/demo/backups/
+.superpowers/
+pickmate/
+tests/
+
+# Secrets
+*.pem
+*.key
+*.p12
+*.pfx
+id_rsa
+id_ed25519
+credentials.json
+*serviceAccount*.json
+secrets/
+*.secret
+.npmrc
+.pypirc
+.aws/
+.gcloud/
+.huggingface/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.swo
+*.log
+tmp/
+temp/

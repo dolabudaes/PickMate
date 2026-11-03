@@ -1,0 +1,34 @@
+{
+  "fixtureVersion": "2026-10-29-coherent-two-product-v3",
+  "demoSessionId": "pickmate-launch-demo",
+  "identity": {
+    "name": "Alex Morgan",
+    "age": 28,
+    "occupation": "Product Designer",
+    "lifestyle": ["Home Office", "PC Gaming"]
+  },
+  "shoppingPersonality": "Alex is a practical shopper who researches purchases carefully. They value compatibility and reliability, compare alternatives before buying, and are willing to pay more when the difference actually matters. Alex does not automatically choose the cheapest product. They prefer products that fit their existing equipment, work consistently, and offer meaningful value. They dislike paying extra for features they will not actually use.",
+  "currentShoppingGoal": "Alex has an older DVI monitor and a PC with HDMI output. They want an inexpensive solution for now, but are considering upgrading to a 4K 120Hz monitor in the future.",
+  "shoppingBehavior": [
+    "Checks product compatibility before comparing prices.",
+    "Values reliability and stable performance.",
+    "Researches multiple options before deciding.",
+    "Willing to spend slightly more for meaningful improvements.",
+    "Avoids unnecessary premium specifications and features."
+  ],
+  "longTermPreferences": [
+    { "id": "demo-pref-compatibility", "label": "Compatibility first", "facet": "compatibility", "value": "compatibility_first", "category": "compatibility", "status": "confirmed", "priority": 100 },
+    { "id": "demo-pref-reliability", "label": "Reliability matters", "facet": "reliability", "value": "reliability_matters", "category": "quality", "status": "confirmed", "priority": 90 },
+    { "id": "demo-pref-avoid-unused-features", "label": "Avoid unused features", "facet": "features", "value": "avoid_unused_features", "category": "features", "status": "confirmed", "priority": 80 },
+    { "id": "demo-pref-compare-before-buying", "label": "Compare before buying", "facet": "comparison", "value": "compare_before_buying", "category": "shopping_habits", "status": "suggested", "priority": 70 }
+  ],
+  "shoppingContext": {
+    "devices": [
+      { "type": "monitor", "input": "DVI", "scope": "current_purchase" },
+      { "type": "computer", "output": "HDMI", "scope": "current_purchase" }
+    ],
+    "futurePlans": [
+      { "goal": "Upgrade to a 4K 120Hz monitor", "scope": "current_purchase" }
+    ]
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "name": "pickmate",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "workspaces": [
+    "apps/expo"
+  ],
+  "scripts": {
+    "dev": "npm run dev:expo",
+    "dev:api": "uvicorn app.main:app --host 0.0.0.0 --port 8011 --app-dir apps/api",
+    "dev:expo": "npm --workspace @pickmate/expo run start",
+    "dev:expo:web": "npm --workspace @pickmate/expo run web",
+    "ios": "npm --workspace @pickmate/expo run ios",
+    "android": "npm --workspace @pickmate/expo run android",
+    "typecheck": "npm --workspace @pickmate/expo run typecheck"
+  }
+}
